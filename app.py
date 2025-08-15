@@ -7,6 +7,7 @@ from nltk.stem.porter import PorterStemmer
 
 nltk.download('stopwords', quiet=True)
 nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab', quiet=True)  # added to fix Streamlit Cloud error
 
 ps = PorterStemmer()
 stop_words = set(stopwords.words('english'))
@@ -37,4 +38,3 @@ if st.button('Predict'):
         st.header("Spam")
     else:
         st.header("Not Spam")
-
