@@ -36,5 +36,8 @@ if st.button('Predict'):
     #4. display
     if result == 1:
         st.header("Spam")
+        st.write("⚠️ This message looks like spam. Be cautious before clicking any links or sharing information.")
     else:
         st.header("Not Spam")
+        st.write("✅ This message seems safe. No signs of spam detected.")
+
